@@ -1,0 +1,12 @@
+
+
+
+
+<mat-grid-list cols="3" rowHeight="2:1">
+  <mat-grid-tile *ngFor="let asset of allAssets" (click)="assetDetails(asset.id)">
+    <div class="row-2">
+      <span class="material-icons" style="font-size: 50px;">domain</span>
+      <h2>{{asset.name}}</h2>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

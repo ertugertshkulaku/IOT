@@ -1,0 +1,9 @@
+<ol>
+  <li>
+    <mat-form-field>
+      <mat-label>Enter Asset Name</mat-label>
+      <input matInput [(ngModel)]="asset.name">
+    </mat-form-field>
+  </li>
+    <button mat-raised-button (click)="saveAsset()" [mat-dialog-close]="true">Save</button>
+</ol>

@@ -1,0 +1,70 @@
+
+<ol>
+  <li>
+       <mat-form-field>
+      <mat-label>Enter Device Name</mat-label>
+      <input matInput [(ngModel)]="device.name" >
+    </mat-form-field>
+  </li>
+  <li>
+    <mat-form-field>
+   <mat-label>Enter Device Type</mat-label>
+   <input matInput [(ngModel)]="type.description" >
+ </mat-form-field>
+</li>
+  <li>
+    <mat-form-field>
+      <mat-label>Enter Device Status</mat-label>
+      <input matInput [(ngModel)]="device.status" >
+    </mat-form-field>
+  </li>
+  <li>
+    <mat-form-field>
+      <mat-label>Enter Device Attribute Name</mat-label>
+      <input matInput [(ngModel)]="newAttribute.name" >
+    </mat-form-field>
+  </li>
+  <li>
+    <mat-form-field>
+      <mat-label>Enter Device Attribute Value</mat-label>
+      <input matInput [(ngModel)]="newAttribute.value" >
+    </mat-form-field>
+  </li>
+  <li>
+    <mat-form-field>
+      <mat-label>Enter Device Attribute ValueMin</mat-label>
+      <input matInput [(ngModel)]="newAttribute.valueMin" >
+    </mat-form-field>
+  </li>
+  <li>
+    <mat-form-field>
+      <mat-label>Enter Device Attribute ValueMax</mat-label>
+      <input matInput [(ngModel)]="newAttribute.valueMax" >
+    </mat-form-field>
+  </li>
+
+
+  <button mat-raised-button  [mat-dialog-close]="true" (click)="addDevice()">Save</button>
+</ol>
+<!--<h3> Create New Device<span class="material-icons">-->
+<!--handyman-->
+<!--</span></h3>-->
+<!--<div>-->
+<!--  <form-->
+<!--    #f = "ngForm"-->
+<!--    (ngSubmit)="onSubmit(f)">-->
+<!--    <div class="form-group">-->
+<!--      <label for="name">Device Name</label>-->
+<!--      <input-->
+<!--        ngModel-->
+<!--        name="name"-->
+<!--        type="text"-->
+<!--        class="form-control"-->
+<!--        id="name"-->
+<!--        #name="ngModel">-->
+
+<!--    </div>-->
+<!--    <button type="submit" class="btn btn-success">Save</button>-->
+<!--    {{device.name}}-->
+<!--  </form>-->
+<!--</div>-->
